@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mouse Event Example</title>
+</head>
+<body>
+<!-- 
+<button id="myBtn">Click Me</button> -->
+
+<script>
+//   window.open('https://wipro.com')
+//   window.close()
+// window.prompt("What is your name :")
+// window.print("print the data")
+//BOM(Browser object model)
+// console.log(window.location.hostname)
+// window.setInterval(function(){
+// location.href="https://google.com";
+// },5000);
+
+const objectmodel={
+  Name: "Bharathan",
+  City:"molapalayam",
+
+ greetUser(){
+  return `hello, i am ${this.Name} from ${this.City}`;
+  }
+}
+const inputName=prompt("What is your name ?");
+const inputCity=prompt("What is your City ?");
+
+objectmodel.Name = inputName;
+objectmodel.City=inputCity;
+document.body.write=objectmodel.greetUser();
+
+
+</script>
+
+</body>
+</html>
